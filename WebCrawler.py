@@ -31,6 +31,20 @@ options.add_argument("headless")
 browser = webdriver.Chrome(options=options)
 
 
+if not os.path.exists("./distillation_data"):
+    os.makedirs("./distillation_data")
+
+if not os.path.exists("./basic_data"):
+    os.makedirs("./basic_data")
+    
+if not os.path.exists("./lightends_data"):
+    os.makedirs("./lightends_data")
+
+if not os.path.exists("./btex_data"):
+    os.makedirs("./btex_data")
+
+
+
 class getProfiles():
     """
     Used to get information about Profiles for all crude oils 
