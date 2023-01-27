@@ -1,0 +1,10 @@
+property,most_recent,six_month,one_year,five_year
+Density(kg/m³),818.1,814.1,814.8,817.7
+Gravity(°API),41.3,42.2,42.0,41.4
+Sulphur(wt%),0.42,0.41,0.42,0.38
+MicroCarbonResidue(wt%),1.40,1.53,1.56,1.61
+Sediment(ppmw),115,115,115,115
+Salt(ptb),13.6,13.6,13.6,13.6
+Nickel(mg/kg),3.6,3.7,3.8,3.4
+Vanadium(mg/kg),7.4,7.4,7.5,6.9
+Olefins(wt%),---,---,ND,ND

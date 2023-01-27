@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blended Crude Oil Disttilation Profile Predictor</title>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <style>
+        footer  {
+        position: absolute;
+        bottom: 3cm;
+        width: 100%;
+        height: 2.5rem;
+    }
+    </style>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <h1 font-family: "serif"> Blended Crude Oil Distillation Profile Predictor </h1>
+    <form action='/output' method="POST">
+        <fieldset class="oil1-input", style="width: 50%; min-width: 200px;">
+        <legend>Crude Oil 1</legend>
+        <select name="oil_1_select" id="oil_1_select">
+            {% for oil in all_oils %}
+            <option value="{{ oil }}">{{ oil }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="oil_1_vol" value="Volumn (L)" required>
+        <label>Crude Oil 1 Volumn (m<sup>3</sup>)</label>
+        </fieldset>
+        <fieldset class="oil2-input", style="width: 50%; min-width: 200px;">
+        <select name="oil_2_select" id="oil_2_select">
+            {% for oil in all_oils %}
+            <option value="{{ oil }}">{{ oil }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="oil_2_vol" value="Volumn (L)" required>
+        <label>Crude Oil 2 Volumn (m<sup>3</sup>)</label>
+        <legend>Crude Oil 2</legend>
+        </fieldset>
+        <input type="submit" name="calculate" value="Calculate Profile">
+    </form>
+
+    
+</body>
+
+<footer>
+    <p>Author: Paul Xie </p>
+    <p>All crude oil related data is from <a href="https://www.crudemonitor.ca">
+        CrudeMonitor</a>.
+    </p>
+</footer>
+
+</html>

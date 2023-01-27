@@ -1,0 +1,10 @@
+property,most_recent,six_month,one_year,five_year
+Density(kg/m³),752.2,729.3,735.1,739.6
+Gravity(°API),56.4,62.4,60.9,59.7
+Sulphur(wt%),0.14,0.10,0.11,0.09
+MicroCarbonResidue(wt%),ND,ND,ND,0.11
+Viscosity@7.5°C(cSt),1.46,0.93,0.90,1.04
+Sediment(ppmw),176,127,109,133
+Olefins(wt%),---,ND,ND,ND
+Organo-Phosphates(ppmw),---,ND,ND,ND
+Oxygenates(wt%),---,ND,ND,ND

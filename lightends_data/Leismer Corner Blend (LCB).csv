@@ -1,0 +1,11 @@
+property,most_recent,six_month,one_year,five_year
+C3-(vol%),0.04,0.02,0.02,0.02
+iC4iso-Butane(vol%),0.19,0.16,0.15,0.15
+nC4n-Butane(vol%),0.96,0.86,0.85,0.84
+iC5iso-Pentane(vol%),2.36,1.99,2.21,2.66
+nC5n-Pentane(vol%),2.82,2.34,2.58,3.01
+C6Hexanes(vol%),5.7,5.07,5.35,5.5
+C7Heptanes(vol%),6.2,5.56,5.73,5.36
+C8Octanes(vol%),5.94,5.5,5.56,5.0
+C9Nonanes(vol%),3.27,3.06,2.88,2.58
+C10Decanes(vol%),1.14,1.04,1.02,0.89
