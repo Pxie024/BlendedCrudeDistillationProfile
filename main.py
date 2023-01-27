@@ -5,6 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms import SelectField, FloatField, validators, DecimalField
 from DataCleaner import CleanData
 from CrudeBlendModel import mix_crude, Model
+from WebCrawler import getProfiles
 
 import random
 
@@ -20,6 +21,11 @@ from sklearn.impute import SimpleImputer
 from sklearn.metrics import make_scorer, r2_score, mean_squared_error, auc, mean_absolute_error, accuracy_score
 from sklearn.pipeline import Pipeline
 from sklearn.base import BaseEstimator
+
+
+# get data from web
+oil_profiles = getProfiles()
+oil_profiles.get_all_profiles()
 
 
 # Load Data 
