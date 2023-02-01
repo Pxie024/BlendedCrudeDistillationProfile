@@ -112,7 +112,7 @@ class getProfiles():
         
         if len(distill_profile) >= 1:
             # write the data into a .txt file 
-            file_path = './btex_data/{}.txt'.format(oil_name)
+            file_path = './distillation_data/{}.txt'.format(oil_name)
             with open(file_path, 'w') as f:
                 content = distill_profile[0].text
                 content_items = content.split('\n')
