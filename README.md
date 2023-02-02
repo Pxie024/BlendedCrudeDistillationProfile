@@ -11,5 +11,6 @@ This project consists of web crawling, data cleaning, model selection, training,
 * `templates`: The directory which contains some HTML files for the UI. 
 * `solution_summary.ipynb`: A summary of the solution I used to solve this project.
 * `solution_summary.pdf`: A pdf version of `solution_summary.ipynb`
+* `TestDataCleaner.py`: Unit test for the module `DataCleaner.py`. Includes a couple simple test cases.
 
-To run this program on your local computer, clone this directory, and run `main.py` using Python. It will take a few minutes for the server to get started. 
+To run this program on your local computer, clone this directory, and run `main.py` using Python. It will take a few minutes for the server to get started. The web application will run on your localhost.
