@@ -38,11 +38,13 @@ impX = SimpleImputer(missing_values=np.nan, strategy='mean')
 scaler = StandardScaler()
 x_data = x_data.apply(lambda row: row.replace(np.nan, row.mean()), axis=1)
 Y_data = Y_data.apply(lambda row: row.replace(np.nan, max(row)), axis=1)
-
+x_train, x_test, Y_train, Y_test = train_test_split(x_data, Y_data, test_size=0.2)
 all_oils = Y_data.index.values
 
 # fit the data
-Model.fit(x_data, Y_data)
+Model.fit(x_train, Y_train)
+predictions = Model.predict(x_test)
+error = round(mean_absolute_error(Y_test, predictions), 2)
 
 
 app = Flask(__name__)
@@ -85,7 +87,7 @@ def submit():
         for i in range(len(predictions)):
             print(predictions)
             results[report_pct[i]] = predictions[i]
-        return render_template('output.html', results=results)
+        return render_template('output.html', results=results, error=error)
 
 
 if __name__ == '__main__':
