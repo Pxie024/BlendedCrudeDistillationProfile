@@ -115,17 +115,7 @@ class getProfiles():
             file_path = './distillation_data/{}.txt'.format(oil_name)
             with open(file_path, 'w') as f:
                 content = distill_profile[0].text
-                content_items = content.split('\n')
-                for line in content_items :
-                    if ")" in line:
-                        loc = re.search("\)", line).span()[0]
-                        header = line[:loc+1]
-                        data = line[loc+1:]
-                        header = header.replace(' ','')
-                        new_line = header + data + '\n'
-                        f.write(new_line)
-                    elif len(line.strip()):
-                        f.write(line)
+                f.write(content)
         
         
     def basic_profile(self, oil_name) -> None:
